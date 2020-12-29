@@ -17,12 +17,12 @@
     color: white;
     font-size: x-large;
     font-weight: 700;
-    letter-spacing: 10px;
-    margin-bottom: 20px;
+    letter-spacing: 2vh;
+    margin-bottom: 5vh;
     position: relative;
     background: black;
     animation: splashscreen 7s 1;
-    padding: 10px;
+    padding: 1vh;
 }
 
 .splash-subtitle{
@@ -106,21 +106,22 @@
     box-sizing: border-box;
 }
 
-.column-media, .column-projects{
+.column-media{
+    height: 80vh;
     text-align: center;
-    position: relative;
     float: left;
     width: 50%;
     padding: 10px;
     box-sizing: border-box;
 }
 
-.column-media{
-    height: 80vh;
-}
-
 .column-projects{
     height: 100vh;
+    text-align: center;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 /* Clear floats after the columns */
@@ -145,7 +146,7 @@
     height: 50%;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1000px) {
     /* For tablets: */
     .container {
       width: 80%;
@@ -154,14 +155,20 @@
     .section {
       width: 100%;
     }
-  }
-@media only screen and (max-width:500px) {
-/* For mobile phones: */
-.container .section {
-    width: 100%;
-  }
-.column {
-    width: 100%;
-  }
+}
+@media only screen and (max-width:800px) {
+    /* For mobile phones: */
+    .container {
+        width: 100%;
+    }
+    .section {
+        width: 100%;
+    }
+    .column-media {
+        width: 100%;
+    }
+    .column-projects{
+        width: 100%;
+    }
 
 }
