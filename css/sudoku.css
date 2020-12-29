@@ -1,0 +1,42 @@
+* {
+    background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    text-align: center;
+    padding: 5vh;
+}
+
+.title, .sub-title{
+    text-align: center;
+}
+
+.title {
+    padding: 10vh;
+}
+
+.sub-title {
+    padding-right: 2vh;
+}
+
+button {
+    justify-self: center;
+}
+
+#setup-game{
+    display: flex;
+    justify-content: center;
+
+}
+
+#setup-game > * {
+    margin-bottom: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    display: flex;
+    align-items: center;
+}

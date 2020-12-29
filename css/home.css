@@ -21,8 +21,8 @@
     margin-bottom: 20px;
     position: relative;
     background: black;
-    animation: splashscreen 3s 1;
-    padding: 10px
+    animation: splashscreen 7s 1;
+    padding: 10px;
 }
 
 .splash-subtitle{
@@ -32,8 +32,8 @@
 }
 
 .splash-arrow{
-    animation: arrownudge 6s 1;
-    animation-delay: 5s;
+    animation: arrownudge 10s 1;
+    animation-delay: 10s;
 }
 
 @keyframes splashscreen{
@@ -41,7 +41,11 @@
         color: black;
         margin-bottom: -40px;
     }
-    30%{
+    20%{
+        color: black;
+        margin-bottom: -40px;
+    }
+    70%{
         letter-spacing: 25px;
         margin-bottom: -40px;
     }
@@ -63,19 +67,29 @@
     }
 }
 
-.spacing{
+.spacing-large{
     height: 50vh;
 }
 
-.about-title{
-    padding: 10px;
+.spacing-small{
+    height: 25vh;
+}
+
+.title{
+    padding: 3vh;
+}
+
+.paragraph{
+    padding: 1vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
 }
 
 .section{
     color: white;
     text-align: center;
     font-size: large;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
     line-height: 1.6;
     margin-left: auto;
@@ -83,13 +97,45 @@
     width: 60%;
 }
 
+.column-full{
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.column-media, .column-projects{
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.column-media{
+    height: 80vh;
+}
+
+.column-projects{
+    height: 100vh;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 .footer{
     width: 100%;
     height: 100px;
     background-color: #333399;
     position: relative;
     left: 0;
-    bottom: -500;
     text-align: center;
     position: absolute;
 }
@@ -97,4 +143,25 @@
 .logo{
     padding: 25px;
     height: 50%;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .container {
+      width: 80%;
+      padding: 0;
+    }
+    .section {
+      width: 100%;
+    }
+  }
+@media only screen and (max-width:500px) {
+/* For mobile phones: */
+.container .section {
+    width: 100%;
+  }
+.column {
+    width: 100%;
+  }
+
 }

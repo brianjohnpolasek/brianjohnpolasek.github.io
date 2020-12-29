@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Brian Polasek's Sudoku</title>
+
+        <!-- LINKS -->
+        <link rel="icon" href="images/logos/github-icon.png">
+        <link rel="stylesheet" href="css/sudoku.css">
+        <!-- END LINKS -->
+    </head>
+    <header>
+        <h1 class="title">Sudoku Game</h1>
+
+        <!-- GAME SETUP-->
+        <div id="setup-game">
+            <div id="difficulty">
+                <h3 class="sub-title">Choose Difficulty: </h3>
+                <label><input id="easy" type="radio" name="dificulty" value="easy" checked>Easy</label>
+                <label><input id="medium" type="radio" name="dificulty" value="medium">Medium</label>
+                <label><input id="hard" type="radio" name="dificulty" value="hard">Hard</label>
+            </div>
+            <div id="time">
+                <h3 class="sub-title">Choose Time Amount: </h3>
+                <label><input id="time-1" type="radio" name="dificulty" value="fivemin" checked>5 Minutes</label>
+                <label><input id="time-2" type="radio" name="dificulty" value="tenmin">10 Minutes</label>
+                <label><input id="time-3" type="radio" name="dificulty" value="fifteenmin">15 Minutes</label>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <button id="new-game">Start New Game</button>
+        </div>
+        <!-- END GAME SETUP-->
+    </header>
+    <body>
+        <div id="stats">
+            <p id="timer"></p>
+            <p id="lives"></p>
+        </div>
+        <div id="game">
+            <div id="board"></div>
+            <div id="number-div" class="hidden">
+
+            </div>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+</html>
