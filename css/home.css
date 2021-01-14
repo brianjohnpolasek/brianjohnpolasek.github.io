@@ -32,6 +32,7 @@
 }
 
 .splash-arrow{
+    color: black;
     animation: arrownudge 10s 1;
     animation-delay: 10s;
 }
